@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="680.0" prefWidth="600.0" style="-fx-background-color: #202442; -fx-border-radius: 20;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Driver">
+   <children>
+      <Text fill="WHITE" layoutX="48.0" layoutY="121.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Quine McCluskey">
+         <font>
+            <Font name="Segoe UI Bold" size="45.0" />
+         </font>
+      </Text>
+      <Text fill="#afb1b8" layoutX="48.0" layoutY="160.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome, User! This program will simulate Quine-McCluskey (QM) method, which is one of the most powerful techniques to simplify Boolean expressions." wrappingWidth="512.6274779735684">
+         <font>
+            <Font name="Segoe UI" size="18.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="44.0" layoutY="342.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter the given minterms:" wrappingWidth="512.6274779735684">
+         <font>
+            <Font name="Segoe UI" size="25.0" />
+         </font>
+      </Text>
+      <TextField fx:id="numbers" layoutX="44.0" layoutY="361.0" prefHeight="33.0" prefWidth="513.0" promptText="Minterms" style="-fx-background-color: inherit; -fx-border-color: #41CD7D; -fx-border-radius: 20; -fx-text-fill: white;" />
+      <Button fx:id="submit" onAction="#submit" layoutX="44.0" layoutY="445.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="513.0" style="-fx-background-color: #41CD7D; -fx-background-radius: 20;" text="Submit" textFill="#202442" />
+      <Text fill="#afb1b8" layoutX="354.0" layoutY="619.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Po, Klowee " wrappingWidth="231.62747797356838">
+         <font>
+            <Font name="Segoe UI" size="18.0" />
+         </font>
+      </Text>
+      <Text fill="#afb1b8" layoutX="354.0" layoutY="642.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Velarde, Benjamin Gabriel" wrappingWidth="231.62747797356838">
+         <font>
+            <Font name="Segoe UI" size="18.0" />
+         </font>
+      </Text>
+      <Text fill="#afb1b8" layoutX="48.0" layoutY="248.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Directions: Only input numbers strictly separated by a comma (e.g. 1,2,3,4). If Don't Cares are excluded, leave the second text field blank. Press submit to see solution." wrappingWidth="512.6274779735684">
+         <font>
+            <Font name="Segoe UI" size="18.0" />
+         </font>
+      </Text>
+      <TextField fx:id="numbers2" layoutX="44.0" layoutY="403.0" prefHeight="33.0" prefWidth="513.0" promptText="Don't Cares" style="-fx-background-color: inherit; -fx-border-color: #41CD7D; -fx-border-radius: 20; -fx-text-fill: white;" />
+   </children>
+</AnchorPane>
